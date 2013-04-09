@@ -1,6 +1,5 @@
 package com.blackbyte.api;
 
-import org.json.JSONObject;
 
 public class Company extends Resource {
 
@@ -9,15 +8,6 @@ public class Company extends Resource {
 	}
 	
 	public Company(Settings settings) {
-		this.settings = settings;
+		super(settings);
 	}
-	
-	public JSONObject getCompanies() {
-		return super.get("company", null, null);
-	}
-	
-	public JSONObject getCompany(String id) {
-		return super.get("company", id, null);
-	}
-	
 }

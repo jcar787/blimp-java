@@ -1,6 +1,5 @@
 package com.blackbyte.api;
 
-import org.json.JSONObject;
 
 public class Client {
 	private Settings settings;
@@ -19,6 +18,8 @@ public class Client {
 		goal = new Goal(settings);
 		task = new Task(settings);
 		comment = new Comment(settings);
+		user = new User(settings);
+		file = new File(settings);
 	}
 	
 	public Settings getSettings() {

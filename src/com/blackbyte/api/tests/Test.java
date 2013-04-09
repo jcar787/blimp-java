@@ -1,5 +1,7 @@
 package com.blackbyte.api.tests;
 
+import java.util.ArrayList;
+
 import org.json.JSONObject;
 
 import com.blackbyte.api.Client;
@@ -14,11 +16,31 @@ public class Test {
 		settings.setAppSecret("appSecret");
 		
 		Client client = new Client(settings);
-		JSONObject json = client.getCompany().getCompanies();
+		JSONObject params = new JSONObject();
+		try {
+			params.put("name", "Testing The update again");
+			//params.put("company", "/api/v2/company/3456/");
+		ArrayList<String> array = new ArrayList<String>();
+		array.add("/api/v2/user/4497/");
+		params.put("team", array);
+		String identifier = "4280";
+		/*JSONObject json = client.getProject().deleteProject(identifier);
+		//JSONObject json = client.getProject().getProjects("3456");
+		
+
 		
 		if(json != null)
 			System.out.println(json.toString());
 		else
-			System.out.println("=[");
+			System.out.println("=[");*/
+		JSONObject json = client.getCompany().schema();
+		System.out.println(json.toString());
+		}
+		
+		catch(Exception ex) {
+			System.out.println(ex.getMessage());
+		}
+		
+		
 	}
 }
