@@ -1,4 +1,4 @@
-package com.blackbyte.api;
+package com.blackbyte.blimp.api;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

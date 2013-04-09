@@ -1,4 +1,4 @@
-package com.blackbyte.api;
+package com.blackbyte.blimp.api;
 
 
 public class Client {

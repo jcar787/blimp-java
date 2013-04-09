@@ -1,11 +1,11 @@
-package com.blackbyte.api.tests;
+package com.blackbyte.blimp.api.tests;
 
 import java.util.ArrayList;
 
 import org.json.JSONObject;
 
-import com.blackbyte.api.Client;
-import com.blackbyte.api.Settings;
+import com.blackbyte.blimp.api.Client;
+import com.blackbyte.blimp.api.Settings;
 
 public class Test {
 	public static void main(String args[]) {

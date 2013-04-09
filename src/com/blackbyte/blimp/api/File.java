@@ -1,4 +1,4 @@
-package com.blackbyte.api;
+package com.blackbyte.blimp.api;
 
 public class File extends Resource {
 	public File(String username, String apiKey, String appId, String appSecret) {
